@@ -27,7 +27,7 @@ import { useState } from "react"
 const timelineData = [
   {
     year: "2025 - 2027",
-    title: "Master of Science in Cybersecurity and networks",
+    title: "Master of Science in Cybersecurity and Networks",
     company: "Queensland University of Technology",
     location: "Brisbane, QLD",
     type: "education",
@@ -70,13 +70,13 @@ const certifications = [
 // Publications data
 const publications = [
   {
-    title: "Impact of Quantum Computing on Encryptiong",
+    title: "Impact of Quantum Computing on Encryption",
     publisher: "Joel Gilpin",
     year: "2024",
     link: "/The Impact of Quantum Computing on Encryption 9 May - Final.pdf",
   },
   {
-    title: "vulnerability testing on Windows with a Flipper zero",
+    title: "vulnerability testing on Windows with a Flipper Zero",
     publisher: "Joel Gilpin",
     year: "2024",
     link: "/Cybersecurity_Capstone_4510.pdf",
