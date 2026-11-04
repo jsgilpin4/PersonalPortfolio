@@ -11,16 +11,12 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: { DEFAULT: "1.25rem", sm: "2rem" },
+      padding: "2rem",
       screens: {
-        "2xl": "1100px",
+        "2xl": "1400px",
       },
     },
     extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
-        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -70,10 +66,24 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "pulse-glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 0 0 rgba(0, 255, 0, 0)",
+          },
+          "50%": {
+            boxShadow: "0 0 20px 5px rgba(0, 255, 0, 0.3)",
+          },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-glow": "pulse-glow 2s infinite",
+        float: "float 6s ease-in-out infinite",
       },
     },
   },
