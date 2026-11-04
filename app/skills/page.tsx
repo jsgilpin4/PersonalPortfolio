@@ -1,31 +1,32 @@
 import type { Metadata } from "next"
 import { skillGroups } from "@/lib/site"
-import { PageHeader, PageShell } from "@/components/page-header"
+import { PageHero } from "@/components/page-header"
 
 export const metadata: Metadata = { title: "Skills" }
 
 export default function SkillsPage() {
   return (
-    <PageShell>
-      <PageHeader
-        eyebrow="Skills"
+    <>
+      <PageHero
         title="Tools and techniques"
-        description="What I use day to day across offensive security, defence and infrastructure."
+        lead="What I use day to day across offensive security, defence and infrastructure."
       />
-      <div className="divide-y border-y">
-        {skillGroups.map((group) => (
-          <section key={group.name} className="grid gap-4 py-8 sm:grid-cols-[220px_1fr] sm:gap-8">
-            <h2 className="font-semibold">{group.name}</h2>
-            <ul className="flex flex-wrap gap-2">
-              {group.items.map((item) => (
-                <li key={item} className="rounded-md border bg-card px-3 py-1.5 text-sm">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-      </div>
-    </PageShell>
+      <section className="section section--s">
+        <div className="container grid">
+          <ul className="ref ref--full ref--big">
+            {skillGroups.map((g) => (
+              <li key={g.name} className="ref__row">
+                <h2 className="ref__name">{g.name}</h2>
+                <ul className="ref__args">
+                  {g.items.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </>
   )
 }
