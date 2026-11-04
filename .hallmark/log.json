@@ -1,0 +1,32 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "site",
+  "shape": "Manifesto",
+  "theme": "terminal",
+  "axes": "dark/mono/chromatic-green",
+  "hero": "Ledge",
+  "nav": "banner over a retracting bar",
+  "footer": "index columns",
+  "imagery": "glyphs",
+  "photos": 0,
+  "entry": "draw e335ff",
+  "fingerprint": "manifesto-ledge-terminal-session-rows-table-close",
+  "sections": [
+   "Hero",
+   "Statement",
+   "Session",
+   "Rows",
+   "Table",
+   "Close"
+  ],
+  "signature": "the portrait printed in the words of the focus areas",
+  "waived": [
+   "44c",
+   "49b"
+  ],
+  "prompt": "portfolio of a cybersecurity specialist for hiring managers and technical peers",
+  "date": "2026-11-04"
+ }
+]

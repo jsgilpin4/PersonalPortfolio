@@ -94,11 +94,15 @@ export const publications = [
     title: "The Impact of Quantum Computing on Encryption",
     year: "2024",
     href: "/The Impact of Quantum Computing on Encryption 9 May - Final.pdf",
+    size: "324 KB",
+    kind: "Bachelor's thesis, with distinction",
   },
   {
     title: "Vulnerability Testing on Windows with a Flipper Zero",
     year: "2024",
     href: "/Cybersecurity_Capstone_4510.pdf",
+    size: "13.0 MB",
+    kind: "Capstone project",
   },
 ]
 
